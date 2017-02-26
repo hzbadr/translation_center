@@ -6,7 +6,7 @@ require 'acts_as_votable'
 require 'ya2yaml'
 require 'font-awesome-rails'
 # require 'audited'
-require 'rails-observers'
+#require 'rails-observers'
 
 module TranslationCenter
 
