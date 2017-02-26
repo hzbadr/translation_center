@@ -17,7 +17,7 @@ gem "rails-observers", github: 'rails/rails-observers'
 gemspec
 
 gem 'devise'
-gem 'audited', "~> 4.3"
+# gem 'audited', "~> 4.3"
 
 =begin
 gem 'jquery-rails'

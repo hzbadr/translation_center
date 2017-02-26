@@ -44,7 +44,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'ya2yaml'
 
   s.add_dependency 'devise'
-  s.add_dependency 'audited', "~> 4.3"
+  # s.add_dependency 'audited', "~> 4.3"
 
   s.add_dependency 'jquery-rails'
   s.add_dependency 'jquery-ui-rails'

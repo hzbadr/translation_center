@@ -40,7 +40,7 @@ module TranslationCenter
 
     alias_method :key, :translation_key
     acts_as_votable
-    audited
+    # audited
 
     # Serialize as we could store arrays
     serialize :value
@@ -53,7 +53,7 @@ module TranslationCenter
     # called before destory to update the key status
     def notify_key
       self.key.update_status(self.lang)
-      self.audits.destroy
+      # self.audits.destroy
     end
 
     # returns true if the status of the translation is accepted
