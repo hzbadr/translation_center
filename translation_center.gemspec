@@ -38,7 +38,7 @@ Gem::Specification.new do |s|
 
   # Dependencies
 
-  s.add_dependency "rails"
+  s.add_dependency "rails", '~> 5.0.2'
   s.add_dependency 'acts_as_votable'
 
   s.add_dependency 'ya2yaml'
