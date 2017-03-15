@@ -10,7 +10,7 @@ module TranslationCenter
 	    it "assigns @categories & render index template" do
 	      categories = Category.all
 
-	      get :index, use_route: "trancelaion_center"
+	      get :index, use_route: "translation_center"
 	      expect(assigns(:categories)).to eq(categories)
 	      expect(response).to render_template(:index)
 	    end
@@ -20,7 +20,7 @@ module TranslationCenter
 	    it "assigns @category & render show template" do
 	  	category = FactoryGirl.create(:category)
 
-	      get :show, id: category.id, use_route: "trancelaion_center"
+	      get :show, id: category.id, use_route: "translation_center"
 	      expect(assigns(:category)).to eq(category)
 	      expect(response).to render_template(:show)
 	    end
@@ -29,7 +29,7 @@ module TranslationCenter
 	  describe "GET more_keys" do
 	  	it "assigns @category & render keys", :js => true do
 	  	  category = FactoryGirl.create(:category)
-	  	  get :more_keys, category_id: category.id, format: :js, use_route: "trancelaion_center"
+	  	  get :more_keys, category_id: category.id, format: :js, use_route: "translation_center"
 	      	  expect(response).to render_template(:keys)
 	  	end
 	  end
@@ -37,7 +37,7 @@ module TranslationCenter
 	    describe "GET destroy" do
 	  	it "assigns @category & render index" do
 	  	  category = FactoryGirl.create(:category)
-	        get :destroy, id: category.id, use_route: "trancelaion_center"
+	        get :destroy, id: category.id, use_route: "translation_center"
 	      	  expect(Category.where(id: category.id)).to be_empty
 	      	  expect(response).to redirect_to(:categories)
 	    end
